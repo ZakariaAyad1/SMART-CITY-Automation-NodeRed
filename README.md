@@ -43,5 +43,5 @@ Expone los siguientes *endpoints* para la integración con sistemas externos:
     * Actualice la ruta absoluta del archivo `water_potability_cleaned.csv` según su sistema local.
     * Ejecute la inyección para inicializar el contexto global.
 
-## 📝 Notas Técnicas
+## 📝 Notas Técnicas :
 El sistema emplea funciones de JavaScript nativas para el cálculo de cuantiles y coeficientes de correlación, evitando la sobrecarga de dependencias externas y garantizando una ejecución ligera en entornos industriales o de *edge computing*.

@@ -23,7 +23,7 @@ Constituye el núcleo algorítmico del sistema. Realiza:
 * **Análisis de Correlación:** Identificación de la influencia de factores como el pH, Sulfatos y Turbidez sobre la potabilidad.
 * **Detección de Outliers:** Identificación de registros que exceden el umbral crítico de $|z| > 3$.
 
-### 3. Dataset - HTTP
+### 3. Dataset - HTTP :
 Expone los siguientes *endpoints* para la integración con sistemas externos:
 
 | Método | Endpoint | Descripción |

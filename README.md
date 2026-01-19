@@ -14,7 +14,7 @@ El proyecto implementa un ecosistema de procesamiento de datos estructurado en t
 
 El flujo se divide en tres pestañas (tabs) principales para garantizar la modularidad:
 
-### 1. Dataset - Load & Cache
+### 1. Dataset - Load & Cache :
 Encargada del ciclo de vida de los datos. Permite definir la ruta del archivo fuente (`water_potability_cleaned.csv`), realizar el *parsing* y persistir los registros en memoria para optimizar el rendimiento de las consultas subsiguientes.
 
 ### 2. Dataset - Analytics

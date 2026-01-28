@@ -45,3 +45,80 @@ Expone los siguientes *endpoints* para la integración con sistemas externos:
 
 ## 📝 Notas Técnicas :
 El sistema emplea funciones de JavaScript nativas para el cálculo de cuantiles y coeficientes de correlación, evitando la sobrecarga de dependencias externas y garantizando una ejecución ligera en entornos industriales o de *edge computing*.
+
+
+
+
+
+
+
+# Node-RED — Clear and Practical Explanation
+
+## What is Node-RED?
+Node-RED is a **low-code, flow-based development tool** built on **Node.js**. It allows you to wire together devices, APIs, databases, and services using a **visual programming interface** instead of writing large amounts of code.
+
+It is widely used in:
+- IoT systems
+- Automation workflows
+- API orchestration
+- Data processing pipelines
+- Rapid prototyping
+
+---
+
+## Core Concept: Flows
+In Node-RED, logic is implemented through **flows**.
+
+A **flow** is a sequence of connected **nodes** that:
+1. Receive input
+2. Process data
+3. Produce output
+
+Each flow runs **event-driven**, meaning it reacts when data arrives.
+
+---
+
+## Nodes Explained
+Nodes are the building blocks of Node-RED.
+
+### 1. Input Nodes
+They **start** a flow by injecting data.
+Examples:
+- `inject` (manual or scheduled trigger)
+- `http in`
+- `mqtt in`
+- `websocket in`
+
+---
+
+### 2. Processing Nodes
+They **transform or analyze** data.
+Examples:
+- `function` (custom JavaScript logic)
+- `change` (set, move, delete properties)
+- `switch` (conditional routing)
+- `template`
+
+---
+
+### 3. Output Nodes
+They **send data** to an external system or user.
+Examples:
+- `debug`
+- `http response`
+- `mqtt out`
+- `file`
+- `database nodes`
+
+---
+
+## Messages (`msg`)
+Node-RED works by passing **messages** between nodes.
+
+A message is a JavaScript object:
+```js
+msg = {
+  payload: "...",
+  topic: "...",
+  _msgid: "..."
+}

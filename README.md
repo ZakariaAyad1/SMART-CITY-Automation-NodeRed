@@ -114,7 +114,7 @@ Examples:
 
 ## Messages (`msg `)
 Node-RED works by passing **messages** between nodes.
-like return something
+like return something to another node
 A message is a JavaScript object:
 ```js
 msg = {
